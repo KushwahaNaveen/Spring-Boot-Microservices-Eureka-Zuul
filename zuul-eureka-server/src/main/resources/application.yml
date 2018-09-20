@@ -1,0 +1,13 @@
+zuul:
+  prefix: /api
+  routes:
+    m-service-dbx:
+      path:
+        /student/**
+      url:
+          http://localhost:8000
+    m-service-client:
+      path:
+          /client/**
+      url:
+            http://localhost:8100
